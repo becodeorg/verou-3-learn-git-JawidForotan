@@ -1,0 +1,28 @@
+$background: black;
+$textColor: white;
+$fontSize: bold;
+$display: flex;
+$direction: row;
+.navbar {
+  background-color: $background;
+  color: $textColor;
+  display: $display;
+  font-size: $fontSize;
+  ul li {
+    color: red;
+    a {
+      background-color: brown;
+    }
+  }
+}
+.main {
+  .container {
+    background-color: orange;
+    display: $display;
+    flex-direction: $direction;
+
+    p {
+      color: blue;
+    }
+  }
+}
