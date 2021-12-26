@@ -1,0 +1,86 @@
+$font: Helvetica, sans-serif;
+$color: rgb(68, 57, 57);
+$margin: 0px;
+$padding: 0px;
+$background: rgb(217, 240, 248);
+$h1-color: brown;
+$h1-style: italic;
+$text-align: center;
+$article-margin: 10px;
+@import "_partial";
+body {
+  background-color: $background;
+  margin: $margin;
+  padding: $padding;
+  color: $color;
+  font: 100% $font;
+}
+article {
+  margin: $article-margin;
+}
+header {
+  text-align: $text-align;
+  color: $h1-color;
+  font-style: $h1-style;
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 2px;
+      font-weight: bold;
+      font-style: italic;
+      a {
+        text-decoration: none;
+        color: darkblue;
+      }
+    }
+  }
+}
+%paragraph-style {
+  text-align: center;
+  background-color: yellowgreen;
+  color: black;
+  font-size: 15px;
+  border: 1px dashed black;
+  padding: 5px;
+  margin: 5px;
+}
+#extend-inheritance {
+  @extend %paragraph-style;
+}
+@mixin mixin-style {
+  background-color: violet;
+  font-style: italic;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+#mixin-sass-style {
+  @include mixin-style();
+}
+button {
+  padding: 5px;
+  margin: 3px;
+  border-radius: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+#btn1:hover {
+  background-color: green;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+#btn2:hover {
+  background-color: blue;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

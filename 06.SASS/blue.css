@@ -1,0 +1,7 @@
+@import "style.scss";
+@import "style.css";
+@import "_partial.scss";
+body{
+    background-color: blue;
+    
+}

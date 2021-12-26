@@ -1,0 +1,92 @@
+footer {
+  left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #0e0202;
+  text-align: center;
+  padding: 1px;
+  width: 100%;
+}
+
+body {
+  background-color: #d9f0f8;
+  margin: 0px;
+  padding: 0px;
+  color: #443939;
+  font: 100% Helvetica, sans-serif;
+}
+
+article {
+  margin: 10px;
+}
+
+header {
+  text-align: center;
+  color: brown;
+  font-style: italic;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 2px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+#extend-inheritance {
+  text-align: center;
+  background-color: yellowgreen;
+  color: black;
+  font-size: 15px;
+  border: 1px dashed black;
+  padding: 5px;
+  margin: 5px;
+}
+
+#mixin-sass-style {
+  background-color: violet;
+  font-style: italic;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  padding: 5px;
+  margin: 3px;
+  border-radius: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#btn1:hover {
+  background-color: green;
+}
+
+#btn1:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+#btn2:hover {
+  background-color: blue;
+  color: white;
+}
+
+#btn2:hover a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
